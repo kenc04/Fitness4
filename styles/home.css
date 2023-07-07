@@ -1,0 +1,114 @@
+body {
+    background-image: url(../image/bgs-icons-img/homebg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 1520px;
+    padding: 0;
+}
+
+/* Content of Home Page */
+
+.home-content {
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.home-content h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+/* PRODUCT CARD */
+
+.product-card {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width: 1290px) {
+    .product-card {
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 870px) {
+    .product-card {
+        max-width: 400px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    
+    height: 320px;
+    overflow: hidden;
+    z-index: 50;
+    position: static;
+}
+
+.cardio-card, .strength-card, .multi-card, .accessories-card, .gun-card{
+    background-size: cover;
+    background-position: center;
+}
+
+.cardio-card {
+    background-image: url(../image/bgs-icons-img/h-cardio.png);
+}
+
+.strength-card {
+    background-image: url(../image/bgs-icons-img/h-strength.png);
+}
+
+.multi-card {
+    background-image: url(../image/bgs-icons-img/h-multi.png);
+}
+
+.accessories-card {
+    background-image: url(../image/bgs-icons-img/h-accessories.png);
+}
+
+.gun-card {
+    background-image: url(../image/bgs-icons-img/h-gun.png);
+}
+
+.card-text {
+    background: linear-gradient(to top, white, grey);
+    opacity: .9;
+    color: black;
+    font-size: 15px;
+
+    text-align: center;
+    line-height: 25px;
+
+    padding: 5px 10px;
+    position: relative;
+    transform: translate(0, 180px);
+    transition: 0.5s ease;
+}
+
+.card-text button{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 50px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.card:hover .card-text{
+    transform: translate(0, 0);
+}

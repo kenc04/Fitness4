@@ -1,0 +1,37 @@
+main {
+    max-width: 1520px;
+    padding: 0;
+    color: #777;
+    line-height: 25px;
+}
+
+.support-content, .tnc-content {
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* For Support Page */
+
+.support-table th, .support-table td {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+}
+
+.support-table td a {
+    text-decoration: none;
+}
+
+.support-table td a:link {
+    color: #000000;
+}
+
+.support-table td a:hover {
+    color: rgb(232, 112, 65);
+}
+
+/*For Terms and Conditions page*/
+
+h2 {
+    color: #000000;
+}

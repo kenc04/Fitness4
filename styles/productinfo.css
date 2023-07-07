@@ -1,0 +1,185 @@
+.selector ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.selector ul li:hover {
+    border-bottom: 4px solid #ffb445;
+}
+
+.selector ul li a {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 720px) {  
+    .selector ul {
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+@media (max-width: 888px) {  
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.column {
+    text-align: center;
+}
+
+#product-img {
+    width: 80%;
+	cursor: pointer;
+}
+
+.thumbnail{
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border: 2px solid black;
+    z-index: 50;
+}
+
+.thumbnail:hover {
+	opacity:1;
+}
+
+.active {
+	opacity: 1;
+}
+
+.slide-section {
+	display: flex;
+	align-items: center;
+}
+
+#slider {
+	display: flex;
+}
+
+.arrow {
+	height: 30px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.arrow:hover {
+	opacity: .5;
+	width: 35px;
+	height: 35px;
+}
+
+.product-details {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: monospace;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.price {
+    color: red;
+}
+
+.control {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.qty-control {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    max-width: 120px;
+}
+
+.qty-control span {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.qty {
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.add button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(16, 103, 242);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    max-width: 300px;
+    height: 60px;
+}
+
+.add button i {
+    margin-right: 10px;
+}
+
+.add button:hover {
+    background-color: black;
+}
+
+.specifications {
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.specifications tr {
+    height: 40px;
+}
+
+.specifications th, .specifications td {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+}
+
+.specifications ul {
+    padding-left: 20px;
+}
+
+.video {
+    margin-top: 60px;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 1px solid #000000;
+    font-size: 25px;
+    font-family: monospace;
+    line-height: 200%;
+    text-shadow: 2px 2px 8px grey;
+}

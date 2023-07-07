@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/signin.css">
+    <script src="js/signin.js"></script>
+    <link rel="icon" href="image/bgs-icons-img/company-logo.jpg" type="image/x-icon">
+    <title>SIGN IN | Fitness 4</title>
+</head>
+<body>
+    <div class="sign-in-box">
+        <div class="title">
+            <a href="index.html">
+                <img class="company-logo" src="image/bgs-icons-img/company-logo.jpg" alt="Fitness 4">
+            </a>
+            <h1>Sign In</h1>
+        </div>
+        
+        <form class="sign-in-form">
+            <div>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            
+            <div>
+                <input type="password" id="pass" name="pass" placeholder="Enter password" required>
+            </div>
+           
+            <div>
+                <input type="checkbox" id="check" onclick="myFunction()">
+                <label for="check">Show Password</label>
+            </div>
+            
+            <div>
+                <input type="submit" id="submit" value="LOGIN">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

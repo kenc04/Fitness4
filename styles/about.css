@@ -1,0 +1,27 @@
+main {
+    line-height: 25px;
+}
+
+.ourservice-content {
+    max-width: 800px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* For Our Service Page */
+
+th, td {
+    background-color: #f5f5f5;
+}
+
+.service-table tr {
+    height: 100px;
+}
+
+.service-table th {
+    width: 200px;
+}
+
+.service-table td {
+    padding: 0 10px;
+}
