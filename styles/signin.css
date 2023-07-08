@@ -1,0 +1,63 @@
+body {
+    background-image: url("../image/bgs-icons-img/signinbg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sign-in-box {
+    background-color: #ffffff;
+    border: 1px solid #b8b8b8;
+    border-radius: 30px;
+    max-width: 400px;
+    margin: 110px auto 0 auto;
+
+    text-align: center;
+    padding: 30px 0;
+}
+
+.company-logo {
+    width: 100px;
+    padding: 0px;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 15px;
+}
+
+#username, #email, #pass {
+    border: 1px solid #dadada;
+    height: 45px;
+    width: 300px;
+    padding-left: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#submit, #register {
+    display: block;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+
+    padding: 10px 30px;
+}
+
+#submit:hover, #register:hover {
+    background-color: #3a3939;
+}
+
+#register_link, #signin_link {
+    color: black;
+    text-decoration: none;
+}
