@@ -30,7 +30,7 @@ body {
     row-gap: 15px;
 }
 
-#username, #pass {
+#username, #email, #pass {
     border: 1px solid #dadada;
     height: 45px;
     width: 300px;
